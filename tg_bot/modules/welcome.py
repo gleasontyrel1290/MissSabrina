@@ -102,7 +102,7 @@ def new_member(bot: Bot, update: Update):
                     "I have been added to this chat - {} with \nID: <pre>{}</pre>".format(chat.title, chat.id),
                     parse_mode=ParseMode.HTML
                 )
-                update.effective_message.reply_text("Thanks For Adding Me. If You Need Any Support Or Help.. Join [IPCA SUPPORT](https://t.me/IPCA_BOT_Support) .")
+                update.effective_message.reply_text("Thanks For Adding Me. Make Sure That I'm Admin And Have All Rights To Manage Your Group Effectively.")
 
             else:
                 # If welcome message is media, send with appropriate function
