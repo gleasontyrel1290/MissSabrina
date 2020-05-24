@@ -31,7 +31,7 @@ PM_START_TEXT = """
 
 *I'm* *A* *Group* *Management* *Bot*, *Made* *With* *Love* *And* *Managed* *By* [This Awesome Person](https://t.me/Dadsbka) . 
 
-*Special* *Thanks* *To* [This Noob](https: //t.me/Unknown_Hacker_X) . 
+*Special* *Thanks* *To* [This Noob](https://t.me/Unknown_Hacker_X) . 
 
 *If* *You* *Need* *Any* *Support* *Or* *Any* *Help*.. *Please* *Join* [IPCA Support Group](https://t.me/IPCA_BOT_Support) . 
 
@@ -171,7 +171,7 @@ def send_start(bot, update):
                              url="https://t.me/IPCA_BOT_Support"), InlineKeyboardButton(text="❔ Help", callback_data="help_back")
         ]]
     keyboard += [[
-        InlineKeyboardButton(text=tld(chat.id, 'Add Me To Your Group'), url="http://telegram.me/IPCA_BOT?startgroup=botstart")
+        InlineKeyboardButton(text=tld(chat.id, 'Add Me To Your Group[s]'), url="http://telegram.me/IPCA_BOT?startgroup=botstart")
     ]]
 
     update.effective_message.reply_text(
