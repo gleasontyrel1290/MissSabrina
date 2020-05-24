@@ -31,7 +31,7 @@ PM_START_TEXT = """
 
 *I'm* *A* *Group* *Management* *Bot*, *Made* *With* *Love* *And* *Managed* *By* [This Awesome Person](https://t.me/Dadsbka) . 
 
-Special Thanks To [This Noob](https: //t.me/Unknown_Hacker_X) . 
+*Special* *Thanks* *To* [This Noob](https: //t.me/Unknown_Hacker_X) . 
 
 *If* *You* *Need* *Any* *Support* *Or* *Any* *Help*.. *Please* *Join* [IPCA Support Group](https://t.me/IPCA_BOT_Support) . 
 
