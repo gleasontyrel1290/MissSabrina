@@ -27,19 +27,15 @@ def escape_html(word):
     return escape(word)
 
 PM_START_TEXT = """
-Hello *{}* My name is *Sabrina*!
+*Hey* *There!* *I'm* *IPCA*  .
 
-I'm here to manage your groups! 
+*I'm* *A* *Group* *Management* *Bot*, *Made* *With* *Love* *And* *Managed* *By* [This Awesome Person](https://t.me/Dadsbka) . 
 
-Click Help button to find out more about how to use me to my full potential. 
+Special Thanks To [This Noob](https: //t.me/Unknown_Hacker_X) . 
 
-Join Support Chat ( @SabrinaChat ) if you need any support or help 
+*If* *You* *Need* *Any* *Support* *Or* *Any* *Help*.. *Please* *Join* [IPCA Support Group](https://t.me/IPCA_BOT_Support) . 
 
-Join ( @SabrinaOfficial ) if you want to keep up with the news, updates and bot downtime!
-
-Made by @TechnoAyanOfficial
-
-Want me to help you? [Click Here!](https://t.me/MissSabrina_bot?startgroup=true)
+*Hit* /help *To* *Know* *More* *About* *My* *Full* *Potential* *Use!*
 """
 
 
@@ -47,21 +43,24 @@ Want me to help you? [Click Here!](https://t.me/MissSabrina_bot?startgroup=true)
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hello! My Name Is *{}* .
 
-*Main* available commands:
- - /start: Start the bot...
- - /help: help....
- - /donate: To find out more about donating!
- - /settings:
-   - in PM: To find out what SETTINGS you have set....
-   - in a group:
+*Main* *Available* *Commands* :
 
-{}
-And the following:
+ ➡ /start: Start The Bot...
+
+ ➡ /help: Help....
+
+ ➡ /donate: To Find Out More About Donating!
+
+ ➡ /settings:
+
+ ➡ in PM: To Find Out What SETTINGS You Have Set....
+
+ ➡ In A Group:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
-DONATE_STRING = """Hey you can Donate to [Ayan Ansari](t.me/TechnoAyanOfficial) for better server """
+DONATE_STRING = """Hey That's Amazing! But You Know One Thing? I'm Not Gonna Accept Donations. Instead, Poor Any Poor Person.. I'll Feel Good. Thanks For Your Generosity. """
 
 
 IMPORTED = {}
@@ -153,7 +152,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Yo, I'm alive👩")
+        update.effective_message.reply_text("Hey! PM Me If You Have Any Questions On How To Use Me.")
 
 def send_start(bot, update):
     #Try to remove old message
@@ -168,11 +167,11 @@ def send_start(bot, update):
     text = PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID, parse_mode=ParseMode.MARKDOWN)
                 
     keyboard = [[
-        InlineKeyboardButton(text=tld(chat.id, '🥳Add To Group'),
-                             url="https://t.me/MissSabrina_bot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
+        InlineKeyboardButton(text=tld(chat.id, 'Support Group 👥'),
+                             url="https://t.me/IPCA_BOT_Support"), InlineKeyboardButton(text="❔ Help", callback_data="help_back")
         ]]
     keyboard += [[
-        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/SabrinaChat")
+        InlineKeyboardButton(text=tld(chat.id, 'Add Me To Your Group'), url="http://telegram.me/IPCA_BOT?startgroup=botstart")
     ]]
 
     update.effective_message.reply_text(
